@@ -22,7 +22,7 @@ from torchvision.transforms import v2 as transforms # I don't like albumentation
 from tqdm import tqdm
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
-from yaml_reader import yaml_reader
+from utilities.yaml_reader import yaml_reader
 
 #Constants that we will use in the next cells.
 config = yaml_reader()
