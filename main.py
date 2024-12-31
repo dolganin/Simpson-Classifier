@@ -19,7 +19,7 @@ def main():
     model, optimizer, loss, statistic = model_create(class_weights)
 
     # Проверка наличия файла с весами
-    weights_path = "model/best.pt"
+    weights_path = "models/best.pt"
     if os.path.exists(weights_path):
         print(f"Загрузка весов из {weights_path}")
         model.load_state_dict(torch.load(weights_path))

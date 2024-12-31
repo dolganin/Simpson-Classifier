@@ -8,7 +8,7 @@ def create_transformer():
                                   #transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
                                   transforms.Normalize(mean=[0.5], std=[0.25]),
                                   transforms.ConvertImageDtype(dtype=torch.float32),
-                                  transforms.Resize([150, 150], antialias=True),
+                                  transforms.Resize([200, 200], antialias=True),
                                   transforms.RandomHorizontalFlip(p=0.5),
                                   transforms.RandomRotation(15),
                                   transforms.RandomResizedCrop(size=(80, 80), antialias=True),
